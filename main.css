@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.main_body{
+    color: black;
+    background-color: azure;
+    font-family: 'roboto', monospace;
+    text-align: center;
+    margin-left:12%;
+    padding:1px 16px;
+}
+
+.outcome_body{
+    color: black;
+    background-color: azure;
+    font-family: 'roboto', monospace;
+    text-align: left;
+    margin-left:12%;
+    padding:1px 16px;
+}
+
+.nav_bar{
+    color: black;
+    background-color: powderblue;
+    font-family: 'roboto', monospace;
+    font-size: 12;
+    text-align: left;
+}
+
+.header{
+    color: black;
+    background-color: azure;
+    font-family: 'roboto', monospace;
+    text-align: left;
+    margin-left:12%;padding:1px 16px;    
+}
+
+.footer{
+    color: black;
+    background-color: azure;
+    font-family: 'roboto', monospace;
+    text-align: left;
+    margin-left:12%;padding:1px 16px;
+}
+
+.nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    background-color: powderblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+.nav_li_header {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;    
+}
+  
+.nav_li a {
+    display: block;
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+  }
+  
+.nav_li a.active {
+    background-color: steelblue;
+    color: black;
+  }
+  
+.nav_li a:hover:not(.active) {
+    background-color: steelblue;
+    color: black;
+  }
