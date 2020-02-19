@@ -76,3 +76,51 @@
     background-color: steelblue;
     color: black;
   }
+
+  /*The following code, and the DIVs related to it in index.html, are taken from w3schools.com*/
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip_box {
+    background-color: transparent;
+    width: 200px;
+    height: 215px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: inline-block;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip_box_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip_box:hover .flip_box_inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip_box_front, .flip_box_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip_box_front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip_box_back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
